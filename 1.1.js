@@ -12,7 +12,7 @@ for (var index = 0; index < inputDigits.length - 1; index++) {
 }
 
 if (inputDigits[0] === inputDigits[inputDigits.length - 1]) {
-	sum += inputDigits[0]
+	sum += inputDigits[0];
 }
 
 console.log(sum);
