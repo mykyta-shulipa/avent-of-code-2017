@@ -7,10 +7,10 @@ const border = inputDigits.length / 2;
 let sum = 0;
 for (var index = 0; index < inputDigits.length; index++) {
 	const current = inputDigits[index];
-	const diff = index - border;
-	const indexDigitToMatch = diff >= 0 ?
-		diff:
-		inputDigits.length - Math.abs(diff);
+	const indexSum = index + border;
+	const indexDigitToMatch = indexSum > inputDigits.length ?
+		Math.abs(indexSum - inputDigits.length):
+		indexSum;
 	const digitToMatch = inputDigits[indexDigitToMatch];
 
 	if (current === digitToMatch) {
